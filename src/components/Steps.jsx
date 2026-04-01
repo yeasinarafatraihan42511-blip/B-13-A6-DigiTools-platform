@@ -14,9 +14,11 @@ const Steps = () => {
                 <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
                     <div className="bg-white p-6 rounded-xl shadow">
-                        <button className=" flex justify-start items-start bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
+                        <div className='flex justify-end '>
+                            <button className=" bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
                             01
                         </button>
+                        </div>
                        <div className="flex justify-center items-center mb-4">
                             <img src={User} alt="User" />
                         </div>

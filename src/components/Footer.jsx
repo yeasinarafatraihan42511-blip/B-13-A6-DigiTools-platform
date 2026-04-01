@@ -107,7 +107,7 @@ const Footer = () => {
           <div>
               <h5 className='text-white '>Social Links</h5>
           </div>
-          <div flex className="flex mt-4">
+          <div  className="flex mt-4">
              <img src={facebook} alt="Facebook" className="h-6 w-6" />
              <img src={twetter} alt="Twitter" className="h-6 w-6 ml-4" />
              <img src={instagram} alt="Instagram" className="h-6 w-6 ml-4" />

@@ -3,7 +3,7 @@ import { use } from "react"
 
 const Models = ({ modelsPromise }) => {
     const models = use(modelsPromise)
-    console.log(models)
+  
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-16">
@@ -13,7 +13,7 @@ const Models = ({ modelsPromise }) => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8 px-15">
                 {models.map((model) => (
-                    <div key={model.id} className="border border-gray-300 rounded-lg p-6 grid grid-cols-1">
+                     <div key={model.id} className="border border-gray-300 rounded-lg p-6 grid grid-cols-1">
                         <div className="flex justify-between  gap-2">
                             <div>{model.icon}</div>
                             <div className="btn btn-outline btn-primary rounded-3xl">{model.tag}</div>
@@ -34,7 +34,7 @@ const Models = ({ modelsPromise }) => {
                                 </div>
                             ))}
                         </div>
-                        <button className="btn btn-primary text-white py-3">Buy Now</button>
+                        <button  className="btn btn-primary text-white py-3">Buy now</button>
 
 
 

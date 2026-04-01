@@ -1,22 +1,24 @@
 import React from 'react';
+import facebook from "../assets/products/Instagram.png"
+import twetter from "../assets/products/Twitter.png"
+import instagram from "../assets/products/Instagram.png"
 
 const Footer = () => {
-    return (
-       <footer className="bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
+  return (
+    <footer className="bg-zinc-950 border-t border-red-900/50 pt-16 pb-10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-16 gap-12">
           {/* Logo & Description */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo.png" alt="AI Hub Logo" className="h-10 w-auto" />
+              
               <h2 className="text-3xl font-bold tracking-tighter text-white">
-                AI Hub
+                DigiTools
               </h2>
             </div>
 
             <p className="text-zinc-400 text-lg max-w-md">
-              One subscription. Access to all frontier AI models in a single
-              powerful platform.
+              Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
             </p>
 
             {/* <div className="mt-8 flex gap-6 text-2xl text-zinc-500">
@@ -101,6 +103,17 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="md:col-span-3">
+          <div>
+              <h5 className='text-white '>Social Links</h5>
+          </div>
+          <div flex className="flex mt-4">
+             <img src={facebook} alt="Facebook" className="h-6 w-6" />
+             <img src={twetter} alt="Twitter" className="h-6 w-6 ml-4" />
+             <img src={instagram} alt="Instagram" className="h-6 w-6 ml-4" />
+          </div>
+          </div>
+          
         </div>
 
         {/* Bottom Bar */}
@@ -115,7 +128,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    );
+
+  );
 };
 
 export default Footer;

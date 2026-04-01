@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create ATS-friendly resumes easily",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "badge-success",
+    "features": ["100+ templates", "AI suggestions", "PDF export"],
+    "icon": "📄"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Generator",
+    "description": "Build stunning portfolios in minutes",
+    "price": 29,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "badge-warning",
+    "features": ["Custom domains", "Fast hosting", "SEO ready"],
+    "icon": "🌐"
+  },
+  {
+    "id": 3,
+    "name": "Code Formatter Pro",
+    "description": "Format your code instantly",
+    "price": 9,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-info",
+    "features": ["Multi-language", "Auto fix", "Clean output"],
+    "icon": "💻"
+  },
+  {
+    "id": 4,
+    "name": "UI Kit Bundle",
+    "description": "Premium UI components pack",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "badge-success",
+    "features": ["200+ components", "Figma ready", "Responsive"],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "SEO Analyzer",
+    "description": "Boost your website ranking",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "badge-warning",
+    "features": ["Keyword tracking", "Reports", "Insights"],
+    "icon": "📊"
+  },
+  {
+    "id": 6,
+    "name": "AI Content Writer",
+    "description": "Generate high quality content",
+    "price": 25,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "badge-info",
+    "features": ["Blog writing", "Ad copy", "Fast output"],
+    "icon": "✍️"
+  }
+]

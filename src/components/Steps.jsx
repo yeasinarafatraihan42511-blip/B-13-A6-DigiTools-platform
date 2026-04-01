@@ -29,9 +29,11 @@ const Steps = () => {
                     </div>
 
                     <div className="bg-white p-6 rounded-xl shadow">
-                         <button className=" flex justify-start items-start bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
-                            01
+                       <div className='flex justify-end '>
+                            <button className=" bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
+                            02
                         </button>
+                        </div>
                          <div className="flex justify-center items-center mb-4">
                             <img src={Package} alt="Package" />
                         </div>
@@ -42,9 +44,11 @@ const Steps = () => {
                     </div>
 
                     <div className="bg-white p-6 rounded-xl shadow">
-                         <button className=" flex justify-start items-start bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
-                            01
+                   <div className='flex justify-end '>
+                            <button className=" bg-purple-600 text-white py-2 px-4 rounded-full hover:bg-purple-700 transition">
+                            03
                         </button>
+                        </div>
                         <div className="flex justify-center items-center mb-4">
                             <img src={Rocket} alt="Rocket" />
                         </div>

@@ -2,8 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 
 
-const ModelCard = ({ model }) => {
+const ModelCard = ({ model, carts, setCarts }) => {
      const [isSubscribed, setIsSubscribed] = useState(false);
+
+     const handleBuyNow = () => {
+        
+        setIsSubscribed(true);
+        setCarts([...carts, model]);
+     }
+    
+        
     return (
         <div key={model.id} className="border border-gray-300 rounded-lg p-6 grid grid-cols-1">
             <div className="flex justify-between  gap-2">
@@ -26,7 +34,7 @@ const ModelCard = ({ model }) => {
                     </div>
                 ))}
             </div>
-            <button onClick={() => setIsSubscribed(true)} className="btn btn-primary text-white py-3">{isSubscribed ? "Purchased" : "Buy Now"}</button>
+            <button onClick={() => handleBuyNow()} className="btn btn-primary text-white py-3">{isSubscribed ? "Purchased" : "Buy Now"}</button>
 
 
 

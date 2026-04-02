@@ -9,7 +9,7 @@ import Cta from "./components/Cta"
 import Cart from "./components/Cart"
 import { useState } from "react"
 const getModels = async () => {
-  const res = await fetch("/public/models.json")
+  const res = await fetch("/models.json")
   return res.json()
 }
 const modelsPromise = getModels()

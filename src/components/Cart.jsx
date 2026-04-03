@@ -1,30 +1,51 @@
 import React from 'react';
 
 const Cart = ({ carts }) => {
-const totalPrice = carts.reduce((sum,item) => sum + item.price, 0) 
-console.log(totalPrice)
+    const totalPrice = carts.reduce((sum, item) => sum + item.price, 0)
+    console.log(totalPrice)
+
+    const handlePayment = () => {
+        setCarts([]);
+        toast.success("Payement successful!");
+    };
+    const handleDelete = (item) => {
+
+
+        const filteredArray = carts.filter((c) => c.id !== item.id);
+        setCarts(filteredArray);
+
+
+
+
+        toast.success("Item deleted!");
+    };
+
     return (
         <div className=" p-10 max-w-7xl mx-auto ">
             <h1 className='font-bold text-black'>Your Cart</h1>
-            
-            {carts.map((item) => {
+
+            {carts.map((item, index) => {
                 return (
-                    <div className='py-5'>
-                        <div className='flex justify-between items-center border rounded-lg p-3' key={item.id} >
-                        <div className='flex'>
-                            <div className='h-20 w-20'>{item.icon}</div>
-                            <div>
-                                <div className='font-bold text-black'>{item.name}</div>
-                            <div className='text-gray-500'>${item.price.toFixed(2)} /{item.period}</div>
+                    <div className='py-5' key={index} >
+                        <div className='flex justify-between items-center border rounded-lg p-3' >
+                            <div className='flex'>
+                                <div className='h-20 w-20'>{item.icon}</div>
+                                <div>
+                                    <div className='font-bold text-black'>{item.name}</div>
+                                    <div className='text-gray-500'>${item.price.toFixed(2)} /{item.period}</div>
+                                </div>
                             </div>
+                            <button
+                                onClick={() => handleDelete(item)}
+
+                            >
+                                Remove
+                            </button>
+
                         </div>
-                        <button onClick={() => {
-                            // Handle remove from cart logic
-                        }}>
-                            Remove
-                        </button>
+                        
                     </div>
-                    </div>
+                    
                 )
             })}
             <div className='py-5 border-rounded-lg p-3 flex justify-between items-center'>
@@ -35,7 +56,7 @@ console.log(totalPrice)
                 <div className='font-bold text-3xl text-black'>${totalPrice}</div>
             </div>
             <div>
-                <button className='btn btn-primary text-white rounded-3xl w-full'>Proceed to Checkout</button>
+                <button onClick={handlePayment} className='btn btn-primary text-white rounded-3xl w-full'>Proceed to Checkout</button>
             </div>
         </div>
     );

@@ -23,7 +23,7 @@ function App() {
   return (
     <>
 
-      <Navbar />
+      <Navbar/>
       <Banner />
       <Stats />
       {/* name of each tab group should be unique */}

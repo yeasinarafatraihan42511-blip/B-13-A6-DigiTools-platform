@@ -2,6 +2,11 @@ import React from 'react';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
+const tagColor = {
+"Best Seller": "bg-green-200",
+"Popular": "bg-purple-100",
+"New": "bg-yellow-300",
+}
 
 const ModelCard = ({ model, carts, setCarts }) => {
      const [isSubscribed, setIsSubscribed] = useState(false);
@@ -24,7 +29,7 @@ const ModelCard = ({ model, carts, setCarts }) => {
         <div key={model.id} className="border border-gray-300 rounded-lg p-6 grid grid-cols-1">
             <div className="flex justify-between  gap-2">
                 <div>{model.icon}</div>
-                <div className="btn btn-outline btn-primary rounded-3xl">{model.tag}</div>
+                <div className={` ${tagColor[model.tag] || 'bg-gray-500'} btn btn-outline btn-primary rounded-3xl`}>{model.tag}</div>
             </div>
             <div className="text-2xl font-bold ">{model.name}</div>
             <div className="text-gray-600">{model.description}</div>
